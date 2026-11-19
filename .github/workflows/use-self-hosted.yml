@@ -10,5 +10,6 @@ jobs:
     steps:
       - run: whoami
       - run: pwd
+      - run: ls -l
       - run: echo $PATH
       - run: echo ${{secrets.PROD_SECRET}}
