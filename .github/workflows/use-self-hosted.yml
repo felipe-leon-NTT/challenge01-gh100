@@ -5,7 +5,7 @@ on:
 
 jobs:
   main:
-    runs-on: ["self-hosted", "Windows"]
+    runs-on: ["self-hosted", "Linux"]
     environment: production
     steps:
       - run: whoami
