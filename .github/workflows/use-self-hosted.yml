@@ -5,7 +5,7 @@ on:
 
 jobs:
   main:
-    runs-on: ["NTTD-824Z4X3-windows", "Windows"]
+    runs-on: ["self-hosted", "Windows"]
     environment: production
     steps:
       - run: whoami
