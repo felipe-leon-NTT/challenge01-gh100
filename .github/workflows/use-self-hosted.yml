@@ -6,7 +6,9 @@ on:
 jobs:
   main:
     runs-on: challenge01-gh100
+    environment: production
     steps:
       - run: whoami
       - run: pwd
       - run: echo $PATH
+      - run: echo ${{secrets.PROD_SECRET}}
