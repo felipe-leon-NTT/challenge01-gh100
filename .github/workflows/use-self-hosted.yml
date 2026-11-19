@@ -5,7 +5,7 @@ on:
 
 jobs:
   main:
-    runs-on: self-hosted
+    runs-on: NTTD-824Z4X3
     environment: production
     steps:
       - run: whoami
