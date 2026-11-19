@@ -1,0 +1,12 @@
+name: "Test self-hosted runner"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: challenge01-gh100
+    steps:
+      - run: whoami
+      - run: pwd
+      - run: echo $PATH
