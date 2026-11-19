@@ -5,7 +5,7 @@ on:
 
 jobs:
   main:
-    runs-on: selected-repos
+    runs-on: ["NTTD-824Z4X3-windows", "Windows"]
     environment: production
     steps:
       - run: whoami
