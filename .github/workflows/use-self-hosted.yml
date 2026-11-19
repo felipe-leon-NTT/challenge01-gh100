@@ -5,7 +5,7 @@ on:
 
 jobs:
   main:
-    runs-on: ["Linux"]
+    runs-on: ["Linux", "invento"]
     environment: production
     steps:
       - run: whoami
