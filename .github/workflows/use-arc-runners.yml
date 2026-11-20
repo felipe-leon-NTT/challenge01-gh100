@@ -1,0 +1,15 @@
+name: "Test ARC runners"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: local-minikube-runners
+    environment: production
+    steps:
+      - run: whoami
+      - run: pwd
+      - run: ls -l
+      - run: echo $PATH
+      - run: echo ${{secrets.PROD_SECRET}}
